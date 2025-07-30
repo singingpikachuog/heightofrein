@@ -2,7 +2,7 @@ import os, random, time, multiprocessing, queue
 from PIL import Image
 from tqdm import tqdm
 
-SRC, BGS, DST = "data/commands/pokemon/pokemon_images", "data/commands/pokemon/pokemon_images/backgounds", "data/commands/pokemon/images"
+SRC, BGS, DST = "data/commands/pokemon/pokemon_images", "data/commands/pokemon/pokemon_images/backgrounds", "data/commands/pokemon/images"
 RESIZE_RATIO = eval('4/4')
 bg_paths = [os.path.join(BGS, f) for f in os.listdir(BGS) if f.lower().endswith((".png", ".jpg", ".jpeg"))]
 
